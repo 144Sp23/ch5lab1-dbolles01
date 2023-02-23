@@ -5,9 +5,9 @@ File Name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1 {
-    margin: 0;
+body, header, nav, main, footer, img, h1, ul {
     padding: 0;
+    margin: 0;
     border: 0;
 }
 
@@ -15,6 +15,13 @@ body, header, nav, main, footer, img, h1 {
 img {
     max-width: 100%;
     display: block;
+}
+
+/* Style rules for mobile viewport */
+
+/* Hide tab-desk class */
+.tab-desk {
+    display: none;
 }
 
 /* Style rules for header content */
@@ -35,13 +42,14 @@ nav {
 
 nav ul {
     list-style-type: none;
-    margin: 0;
     text-align: center;
 }
 
 nav li {
     display: inline-block;
-    font-size: 2em;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    border-top: 1px solid #e5e9fc;
 }
 
 nav li a {
@@ -57,22 +65,36 @@ main {
     padding: 2%;
     background-color: #e5e9fc;
     overflow: auto;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: 'DM Serif Display', serif;
 }
 
 main p {
     font-size: 1.25em;
 }
 
+.tel-link {
+    background-color: #373684;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
 .action {
-    font-size: 1.75em;
+    font-size: 1.25em;
     color: #373684;
     font-weight: bold;
 }
 
 #piano, #guitar, #violin {
-    width: 29%;
-    float: left;
     margin: 0 2%;
 }
 
@@ -81,12 +103,19 @@ main p {
     background-color: #c0caf7;
     padding: 1% 2%;
 }
+#info ul {
+    margin: 10%;
+}
+
+.round {
+    border-radius: 8px;
+}
 
 #contact {
     text-align: center;
 }
 
-#contact a {
+#contact .email-link {
     color: #4645a8;
     text-decoration: none;
     font-weight: bold;
@@ -94,6 +123,8 @@ main p {
 
 .map {
     border: 5px solid #373684;
+    width: 95%;
+    height: 50%;
 }
 
 /* Style rules for footer content */
